@@ -1,12 +1,12 @@
 
 const Paginationz =({postPerPage, totalPosts, paginate})=>{
     const PageNumbers = [];
-    for (let i=0; i<= Math.ceil(totalPosts / postPerPage); i++){
+    for (let i=1; i<= Math.ceil(totalPosts / postPerPage); i++){
         PageNumbers.push(i);
     }
 
     return(
-        <div className="mt-3">
+        <div className="mt-3 d-flex justify-content-end">
             <ul className="pagination">
                 
                 {PageNumbers.map((item, index) => (
