@@ -7,11 +7,11 @@ const Body_details = () => {
   const [posts, setPosts] = useState([]);
   const [laoding, SetLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(10);
+  const [postPerPage, setPostPerPage] = useState(15);
 
   const fetchData = async () => {
     const { data } = await axios.get(
-      `https://jsonplaceholder.typicode.com/posts`
+      `https://jsonplaceholder.typicode.com/todos`
     );
     // console.log('All posts ', data);
     setPosts(data);

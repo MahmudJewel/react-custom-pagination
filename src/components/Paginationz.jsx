@@ -11,7 +11,7 @@ const Paginationz =({postPerPage, totalPosts, paginate})=>{
                 
                 {PageNumbers.map((item, index) => (
                     <li key={index} className="page-item">
-                        <a onClick={()=>paginate(item)} href="!#" className="page-link">{item}</a>
+                        <a onClick={()=>paginate(item)} href="!#" className="page-link active">{item}</a>
                     </li>
                 ))}
             </ul>
